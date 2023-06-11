@@ -1,0 +1,174 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: larger;
+    /* background-color: #FFA07A; */
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+.fatherOfCells {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    flex-grow: 1;
+
+}
+
+body {
+    background-image: url("/images/img.avif");
+
+
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    font-size: 20px;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.side {
+
+    width: 280px;
+    height: 100%;
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border: 1px solid;
+}
+
+
+.figureItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+
+}
+
+.figureLine {
+    display: flex;
+}
+
+.figureT {
+    /* et figuri root elementoi hamar u karoxa e ogtagorcvel root class elementi mej */
+}
+
+.figureRow {
+    display: flex;
+}
+
+.figureSquare {}
+
+.figureZ {
+    width: 150px;
+}
+
+.figureZReverse {
+    width: 150px;
+}
+
+.figureL {}
+
+.figureLReverse {}
+
+.rotate0 {
+    transform: rotate(0);
+}
+
+.rotate90 {
+    transform: rotate(90deg);
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.rotate270 {
+    transform: rotate(270deg);
+}
+
+.colorHover {
+    color: hsl(0, 100%, 80%);
+}
+
+.score {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    color: white;
+}
+
+.gameOverWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #884A39;
+    width: 400px;
+    border-radius: 15px;
+
+    /* height: 200px; */
+}
+
+.gameOverWindowParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    visibility: hidden;
+}
+
+
+
+.playAgin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.bestScores {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px;
+    width: 200px;
+    right: 10px;
+    bottom: 0px;
+    color: white
+}
+
+.bestScoreLine {
+    font-size: 22px;
+}

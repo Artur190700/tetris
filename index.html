@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="icon" type="image/png" href="images/tetris.png" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div style="display: flex; height: 100%;">
+
+
+        <div id="sideBar" class="side">
+            <div id="one" class="box"></div>
+            <div id="two" class="box"></div>
+            <div id="three" class="box"></div>
+
+        </div>
+
+        <div id="fatherOfCells" class="fatherOfCells">
+
+
+        </div>
+        <div class="score">
+
+            <div id="score"></div>
+
+
+        </div>
+    </div>
+    <div class="gameOverWindowParent" id="gameOverWindowParent">
+        <div class="gameOverWindow" id="fatherForWindow">
+            <span>GAME OVER!</span>
+
+            <div>
+                <span style="font-size: 30px;">YOUR SCORE:<span id="gameOverScore" style="font-size: 30px;"> 0</span>
+                </span>
+            </div>
+            <!-- <div class="playAgin"> -->
+            <label>Please Enter Your Name</label>
+            <input id="nameInput" type="text" style="width: 200px; height: 40px;">
+            <div>
+                <button onclick="reload()" style="font-size: 22px; background-color: #F9E0BB;">PLAY AGAIN!</button>
+                <button onclick=" saveScore()" style="font-size: 22px; background-color: #F9E0BB;">SAVE SCORE</button>
+            </div>
+
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="bestScores">
+        <div style="font-size: 25px;">BEST SCORES</div>
+        <div id="userName1">
+            <span class="bestScoreLine" id="best1">---</span>
+        </div>
+        <div id="userName2">
+            <span class="bestScoreLine " id="best2">---</span>
+        </div>
+        <div id="userName3">
+            <span class="bestScoreLine" id="best3">---</span>
+        </div>
+
+    </div>
+    <script src="tetris.js"></script>
+</body>
+
+</html>
